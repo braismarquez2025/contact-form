@@ -1,0 +1,37 @@
+.message {
+    background-color: $grey-900;
+    border-radius: 12px;
+    padding: 24px;
+    width: 70%;
+    position: absolute;
+    top: 20px;
+    left: 35px;
+    display: none;
+
+    @include breakpoint(tablet) {
+        width: 55%;
+        left: 150px;
+    }
+
+    @include breakpoint(tablethorizontal) {
+        width: 40%;
+        left: 300px;
+        top: 50px;
+    }
+
+    &_header {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 8px;
+    }
+
+    &_title {
+        color: white;
+        margin: 0;
+    }
+
+    &_subtitle {
+        color: $green-200;
+        margin: 0;
+    }
+}

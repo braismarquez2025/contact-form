@@ -1,0 +1,229 @@
+.container {
+    background-color: white;
+    margin: 32px 16px;
+    border-radius: 16px;
+    padding: 24px;
+
+    &_title {
+        color: $grey-900;
+    }
+
+    @include breakpoint(tablet) {
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+
+    @include breakpoint(tablethorizontal) {
+        margin: 15% 15%;
+    }
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+}
+
+.gap {
+    gap: 24px;
+}
+
+.nombre {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 0;
+
+    @include breakpoint(tablet) {
+        flex-direction: row;
+    }
+}
+
+.first_name {
+    width: 100%;
+}
+
+.last_name {
+    width: 100%;
+}
+
+.first_name label {
+    color: $grey-900;
+
+    span {
+        color: $green-600;
+    }
+}
+
+.first_name input {
+    @include input;
+    width: 85%;
+}
+
+
+.last_name label {
+    color: $grey-900;
+
+    span {
+        color: $green-600;
+    }
+}
+
+.last_name input {
+    @include input;
+    width: 85%;
+}
+
+
+.email label {
+    color: $grey-900;
+
+    span {
+        color: $green-600;
+    }
+}
+
+.email input {
+    @include input;
+
+    @include breakpoint(tablet) {
+        width: 92%;
+    }
+    
+}
+
+
+.tipo {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+
+    span {
+        color: $green-600;
+    }
+
+    .input {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @include breakpoint(tablet) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    
+
+        label {
+            @include input;
+            cursor: pointer;
+
+            &:hover {
+                border: 1px solid $green-600;
+                outline: none;
+              }
+        }
+        
+    }
+}
+
+
+.value {
+    display: none;
+}
+
+.checkbox-custom {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid $grey-500;
+    border-radius: 50%;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    vertical-align: middle;
+    margin-right: 12px;
+}
+
+.mensaje{
+    margin-bottom: 40px;
+    textarea {
+        width: 100%;
+        border-radius: 8px;
+        border: 1px solid $grey-500;
+        margin-top: 8px;
+        color: $grey-900;
+        cursor: pointer;
+
+        &:focus {
+            border: 1px solid $green-600;
+            outline: none;
+        }
+
+        &:hover {
+            border: 1px solid $green-600;
+        }
+    }
+
+    span {
+        color: $green-600;
+    }
+}
+
+.terminos {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    gap: 16px;
+    align-items: center;
+    margin-bottom: 40px;
+
+    .checkbox {
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        border: 2px solid $grey-500;
+        cursor: pointer;
+        position: relative;
+        vertical-align: middle;
+    }
+}
+
+.submit {
+    background-color: $green-600;
+    border-radius: 8px;
+    width: 100%;
+    border: none;
+    color: white;
+    padding: 16px 40px;
+    letter-spacing: 1px !important;
+    cursor: pointer;
+
+    &:hover {
+        background-color: $grey-900;
+      }
+}
+
+.hidden {
+    display: none;
+}
+
+
+.check {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+.error {
+    color: $red-errors;
+}
+
+.error_tipo {
+    color: $red-errors;
+}
+
+.error_check {
+    color: $red-errors;
+    margin: 0;
+}

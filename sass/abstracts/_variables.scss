@@ -1,0 +1,40 @@
+$bp-tablet: 768px;
+$bp-tablet-horizontal: 1024px;
+$bp-desktop: 1220px;
+$bp-desktop-xl: 1440px;
+
+$green-200: #E0F1E8;
+$green-600: #0C7D69;
+$grey-500: #86A2A5;
+$grey-900: #2A4144;
+$red-errors: #D73C3C;
+
+$font: "Karla", sans-serif; 
+
+.heading {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -1px;
+    font-weight: 700;
+}
+
+.bodyMD-bold {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 700;
+}
+
+.bodyMD-regular {
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-weight: 400;
+}
+
+.bodySM {
+    font-size: 16px;
+    line-height: 150%; 
+    letter-spacing: 0px;
+    font-weight: 400;
+}

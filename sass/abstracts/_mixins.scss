@@ -1,0 +1,42 @@
+@mixin breakpoint($bp) {
+  @if $bp == tablet {
+    @media (min-width: $bp-tablet) {
+      @content;
+    }
+  }
+
+  @if $bp == tablethorizontal {
+    @media (min-width: $bp-tablet-horizontal) {
+      @content;
+    }
+  }
+
+  @if $bp == desktop {
+    @media (min-width: $bp-desktop) {
+      @content;
+    }
+  }
+
+  @if $bp == desktopxl {
+    @media (min-width: $bp-desktop-xl) {
+      @content;
+    }
+  }
+}
+
+@mixin input {
+  border-radius: 8px;
+  border: 1px solid $grey-500;
+  padding: 12px 24px;
+  color: $grey-900;
+  cursor: pointer;
+
+  &:focus {
+    border: 1px solid $green-600;
+    outline: none;
+  }
+
+  &:hover {
+    border: 1px solid $green-600;
+  }
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Contact form</title>
+
+</head>
+<body>
+  <div class="container">
+    <h1 class="container_title heading">Contact Us</h1>
+    <form class="formulario">
+      <div class="gap">
+          <fieldset class="nombre">
+            <div class="first_name">
+              <label for="first_name" class="bodySM">First Name<span>   *</span></label><br>
+              <input type="text" name="first_name" class="primer_input bodyMD-regular">
+              <p class="error"></p>
+            </div>
+            <div class="last_name">
+              <label for="last_name" class="bodySM">Last Name<span>   *</span></label><br>
+              <input type="text" name="last_name" class="bodyMD-regular">
+              <p class="error"></p>
+            </div>
+          </fieldset>
+
+          <div class="email">
+            <label for="Email Address" class="bodySM">Email Address<span>   *</span></label><br>
+            <input type="email" name="email" class="bodyMD-regular">
+            <p class="error"></p>
+          </div>
+
+          <fieldset class="tipo">
+            <label for="type" class="bodySM">Query Type<span>   *</span></label><br>
+            <div class="input">
+              <label for="option-1" class="option"><input type="checkbox" name="query_type" value="General Enquiry" class="value bodyMD-regular"><span class="checkbox-custom"><img src="./images/icon-radio-selected.svg" class="check hidden"></span>General Enquiry</label>
+              <label for="option-2" class="option"><input type="checkbox" name="query_type" value="Support Request" class="value bodyMD-regular"><span class="checkbox-custom"><img src="./images/icon-radio-selected.svg" class="check hidden"></span>Support Request</label>
+            </div>
+            <p class="error_tipo"></p>
+          </fieldset> 
+
+          <div class="mensaje" class="bodySM">
+            <label for="description">Message<span>   *</span></label><br>
+            <textarea name="mensaje" class="textarea bodyMD-regular" rows="8"></textarea>
+            <p class="error"></p>
+          </div>
+        </div>
+      
+
+        <div class="terminos">
+          <input type="checkbox" id="terminos" class="value bodySM"><span class="checkbox"><img src="./images/icon-checkbox-check.svg" class="checkImg hidden"></span><span>I consent to being contacted by the team   *</span>
+        </div>
+        <p class="error_check"></p>
+
+        <button type="submit" class="submit bodyMD-bold">Submit</button>
+      </form>
+    
+  </div>
+
+  <div class="message">
+    <div class="message_header">
+      <img src="./images/icon-success-check.svg" alt="check">
+      <p class="message_title bodyMD-bold">Message Sent!</p>
+    </div>
+    <p class="message_subtitle bodySM">Thanks for completing the form. We’ll be in touch soon!</p>
+  </div>
+
+
+  
+<script src="main.js"></script>
+ 
+</body>
+</html>
