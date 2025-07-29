@@ -1,6 +1,6 @@
-# Frontend Mentor - Solución de FAQ accordion
+# Frontend Mentor - Solución de Contact Form
 
-Esta es una solución al [desafío de FAQ accordion en Frontend Mentor](https://www.frontendmentor.io/learning-paths/introduction-to-web-accessibility-mXu-9PHVsd/steps/68473d9a81440b1be56ee939/challenge/start). Los desafíos de Frontend Mentor ayudan a mejorar tus habilidades de programación creando proyectos realistas.
+Esta es una solución al [desafío de Contact Form en Frontend Mentor](https://www.frontendmentor.io/challenges/contact-form--G-hYlqKJj). Los desafíos de Frontend Mentor ayudan a mejorar tus habilidades de programación creando proyectos realistas.
 
 ## Tabla de contenido
 
@@ -19,8 +19,8 @@ Esta es una solución al [desafío de FAQ accordion en Frontend Mentor](https://
 
 
 ### 🔗 Links
-- [URL de la solución](https://www.frontendmentor.io/solutions/faq-accordion-solution-kmH1jSCKTI)
-- [URL del sitio en vivo](https://braismarquez2025.github.io/FAQ-accordion/)
+- [URL de la solución](https://www.frontendmentor.io/solutions/contact-form-solution-FsKc1LGzfQ)
+- [URL del sitio en vivo](https://braismarquez2025.github.io/contact-form/)
 
 
 ### 🛠 Llevado a cabo con
